@@ -7,6 +7,43 @@
     <title>Disha Atukuri</title>
 
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles for the About Me, CV and Miscellaneous sections */
+        html { scroll-behavior: smooth; }
+
+        .page-section {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 64px 20px;
+            line-height: 1.6;
+        }
+        .page-section h2 { font-size: 2rem; margin: 0 0 24px; }
+        .page-section h3 {
+            font-size: 1.2rem;
+            margin: 40px 0 16px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid currentColor;
+        }
+        .entry {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 16px;
+            margin-bottom: 18px;
+        }
+        .entry p { margin: 0; }
+        .entry-date { opacity: 0.7; font-size: 0.95rem; }
+        .entry-title { font-weight: 600; }
+        .entry-place { font-style: italic; }
+        .page-section a { color: inherit; text-underline-offset: 3px; }
+
+        /* On phones, stack the date above the description */
+        @media (max-width: 560px) {
+            .entry { grid-template-columns: 1fr; gap: 2px; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+        }
+    </style>
 </head>
 
 <body>
@@ -23,15 +60,237 @@
 
                 <a href="#about">About Me</a>
 
-                <a href="#education">CV</a>
+                <a href="#cv">CV</a>
 
-                <a href="#contact">Miscellaneous</a>
+                <a href="#miscellaneous">Miscellaneous</a>
 
             </div>
 
         </div>
 
     </main>
+
+
+    <!-- ============ ABOUT ME ============ -->
+    <section id="about" class="page-section">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am a second-year master's student in the ALGANT programme
+            (Algebra, Geometry and Number Theory) at the Université de Bordeaux.
+            I am interested in research in algebraic coding theory and number theory.
+        </p>
+
+        <p>
+            Contact: dishaatukuri30 [at] gmail [dot] com
+        </p>
+
+    </section>
+
+
+    <!-- ============ CV ============ -->
+    <section id="cv" class="page-section">
+
+        <h2>CV</h2>
+
+        <h3>Education</h3>
+
+        <div class="entry">
+            <p class="entry-date">2025 – 2026</p>
+            <div>
+                <p class="entry-title">ALGANT Master 2 (Algebra, Geometry and Number Theory)</p>
+                <p class="entry-place">Université de Bordeaux, France</p>
+            </div>
+        </div>
+
+        <div class="entry">
+            <p class="entry-date">2024 – 2025</p>
+            <div>
+                <p class="entry-title">ALGANT Master 1 (Algebra, Geometry and Number Theory)</p>
+                <p class="entry-place">Università degli Studi di Padova, Italy</p>
+            </div>
+        </div>
+
+        <div class="entry">
+            <p class="entry-date">2019 – 2024</p>
+            <div>
+                <p class="entry-title">Integrated Master's in Mathematics</p>
+                <p class="entry-place">University of Hyderabad, India</p>
+            </div>
+        </div>
+
+        <div class="entry">
+            <p class="entry-date">2005 – 2019</p>
+            <div>
+                <p class="entry-title">High School Diploma, Sciences</p>
+                <p class="entry-place">Delhi Public School, Hyderabad, India</p>
+            </div>
+        </div>
+
+
+        <h3>Research</h3>
+
+        <div class="entry">
+            <p class="entry-date">Feb – May 2026</p>
+            <div>
+                <p class="entry-title">Master's thesis internship</p>
+                <p class="entry-place">CNRS – Institut de Mathématiques de Bordeaux (IMB)</p>
+                <p>Zeta functions of linear codes in the Hamming and rank metrics.</p>
+            </div>
+        </div>
+
+        <div class="entry">
+            <p class="entry-date">Jan – Jun 2024</p>
+            <div>
+                <p class="entry-title">Master's thesis</p>
+                <p class="entry-place">University of Hyderabad</p>
+                <p>Higher reciprocity laws.</p>
+            </div>
+        </div>
+
+        <div class="entry">
+            <p class="entry-date">May – Jul 2023</p>
+            <div>
+                <p class="entry-title">Summer Research Intern (SURE Programme)</p>
+                <p class="entry-place">Indian Institute of Technology, Hyderabad</p>
+                <p>Functional analysis.</p>
+            </div>
+        </div>
+
+
+        <h3>Workshops, schools and camps</h3>
+
+        <div class="entry">
+            <p class="entry-date">13 – 16 Apr 2026</p>
+            <div>
+                <p class="entry-title">
+                    <a href="https://wings2026.github.io/" target="_blank" rel="noopener">WINGs 2026</a>, participant
+                </p>
+                <p class="entry-place">London School of Geometry and Number Theory, Cheltenham, UK</p>
+            </div>
+        </div>
+
+        <div class="entry">
+            <p class="entry-date">Jun – Jul 2021</p>
+            <div>
+                <p class="entry-title">MTTS Camp, Level O</p>
+                <p class="entry-place">Mathematics Training and Talent Search Programme</p>
+            </div>
+        </div>
+
+        <div class="entry">
+            <p class="entry-date">Feb – Mar 2021</p>
+            <div>
+                <p class="entry-title">MTTS 2020 Follow-up OFCM, Level O</p>
+                <p class="entry-place">Mathematics Training and Talent Search Programme</p>
+            </div>
+        </div>
+
+        <div class="entry">
+            <p class="entry-date">Oct 2020</p>
+            <div>
+                <p class="entry-title">MTTS 2020 OFCM, Level O</p>
+                <p class="entry-place">Mathematics Training and Talent Search Programme</p>
+            </div>
+        </div>
+
+        <div class="entry">
+            <p class="entry-date">Dec 2019</p>
+            <div>
+                <p class="entry-title">Vijyoshi Science Camp</p>
+                <p class="entry-place">Indian Institute of Science (IISc), Bengaluru</p>
+            </div>
+        </div>
+
+
+        <h3>Skills</h3>
+
+        <div class="entry">
+            <p class="entry-date">Computing</p>
+            <div>
+                <p>Python, SageMath, LaTeX</p>
+            </div>
+        </div>
+
+        <div class="entry">
+            <p class="entry-date">Languages</p>
+            <div>
+                <p>English, Hindi, Telugu (native); French, Italian (elementary)</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ============ MISCELLANEOUS ============ -->
+    <section id="miscellaneous" class="page-section">
+
+        <h2>Miscellaneous</h2>
+
+        <h3>Science communication and outreach</h3>
+
+        <div class="entry">
+            <p class="entry-date">Feb – May 2024</p>
+            <div>
+                <p class="entry-title">Math Tutor</p>
+                <p class="entry-place">Kites and Ninepins, Hyderabad</p>
+            </div>
+        </div>
+
+        <div class="entry">
+            <p class="entry-date">Jan 2024</p>
+            <div>
+                <p class="entry-title">STEM Booth Coordinator</p>
+                <p class="entry-place">Hyderabad Literary Festival</p>
+            </div>
+        </div>
+
+        <div class="entry">
+            <p class="entry-date">Mar 2023</p>
+            <div>
+                <p class="entry-title">Co-host, Integration Bee</p>
+                <p class="entry-place">University of Hyderabad</p>
+                <p>Funded by the National Centre for Mathematics (NCM), India.</p>
+            </div>
+        </div>
+
+        <div class="entry">
+            <p class="entry-date">Dec 2022 – Oct 2023</p>
+            <div>
+                <p class="entry-title">Math Content Creator</p>
+                <p class="entry-place">Acadru, a multidisciplinary learning platform for school and college students</p>
+            </div>
+        </div>
+
+        <div class="entry">
+            <p class="entry-date">Sep – Dec 2021</p>
+            <div>
+                <p class="entry-title">Science Writer</p>
+                <p class="entry-place">Centre for Cellular and Molecular Biology (CCMB), Hyderabad</p>
+            </div>
+        </div>
+
+        <div class="entry">
+            <p class="entry-date">Jul 2020 – May 2021</p>
+            <div>
+                <p class="entry-title">
+                    Co-founder and Designer,
+                    <a href="https://linktr.ee/PRECIS_UoH" target="_blank" rel="noopener">Précis</a>
+                </p>
+                <p class="entry-place">Newsletter and magazine club, University of Hyderabad</p>
+            </div>
+        </div>
+
+        <div class="entry">
+            <p class="entry-date">Nov 2020 – Jun 2024</p>
+            <div>
+                <p class="entry-title">Student Coordinator</p>
+                <p class="entry-place">Junior Science Club, University of Hyderabad</p>
+            </div>
+        </div>
+
+    </section>
 
 </body>
 </html>
